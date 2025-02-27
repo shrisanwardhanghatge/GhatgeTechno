@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghatge Techno</title>
+    <style>
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #a299d0d4, #676e8882);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .made {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.made h1 {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+}
+        .container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .container:hover {
+            transform: scale(1.02);
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(45deg, #ff7b00, #ff5500);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            background: linear-gradient(45deg, #ff5500, #ff3300);
+            transform: scale(1.05);
+        }
+        
+        .feature-list {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        
+        .feature-list li {
+            font-size: 18px;
+            margin: 12px 0;
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-list li::before {
+            content: '\2714';
+            color: #ffcc00;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+        
+        .feature-list a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .feature-list a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        
+        .header {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: none;
+            letter-spacing: 1.5px;
+        }
+        /* Logo Styling - Stark Industries Inspired */
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 10px;  /* Ensures it's at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #ffffff, #b0bec5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 1000;  /* Ensures it stays on top */
+}
+
+/* Push Down Content to Prevent Overlap */
+.cont {
+    margin-top: 80px; /* Pushes the login form down */
+}
+    </style>
+</head>
+
+<body>
+      <div class="logo">
+    <span class="ghatge">Ghatge Thechno</span>
+    
+  </div>
+    <div class="container">
+        <h1 class="header"><i>Welcome to Ghatge Techno</i></h1>
+        <p>Leading the way in technological innovations and digital transformation.</p>
+        <ul class="feature-list">
+            <li>🚀 <a href="https://www.britannica.com/technology/artificial-intelligence">AI & Machine Learning</a></li>
+            <li>🔍 <a href="https://www.cisa.gov/topics/cybersecurity-best-practices">Cybersecurity Trends</a></li>
+            <li>📱 <a href="https://dribbble.com/tags/web-design">Web & App Development</a></li>
+        </ul>
+        <a href="main.html" class="btn">Go Back</a>
+    </div>
+        <div class="made">
+      <h1>       
+      made by : Shrisanwardhan Ghatge
+      </h1>
+       
+      </div>
+</body>
+
+</html>

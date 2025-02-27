@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right,#a299d0d4,#676e8882);
+    color: #333;
+}
+.cont{
+    margin: 0 15px;
+
+}
+
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 600px rgba(0, 0, 0, 0.1);
+    background: #d9d2d2c7;
+    /* display: none; */
+}
+/* Logo Styling - Stark Industries Inspired */
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 10px;  /* Ensures it's at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #ffffff, #b0bec5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 1000;  /* Ensures it stays on top */
+}
+
+/* Push Down Content to Prevent Overlap */
+.cont {
+    margin-top: 10px; /* Pushes the login form down */
+}
+
+.made {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.made h1 {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+}
+.form-box.acttive{
+    display: block;
+}
+h2{
+    text-align:start ;
+}
+h1{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    width: 300px;
+    padding: 12px;
+    background: #92929580;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background: #330976;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}

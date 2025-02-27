@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghatge Tech</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>    
+
+    <button class="logout-btn" id="logoutButton">Logout</button>
+  <div class="made">
+      <h1>       
+      made by : Shrisanwardhan Ghatge
+      </h1>
+       
+  </div>  
+    
+  <div class="logo">
+      <span class="ghatge">Ghatge</span>
+      <span class="techno">Techno</span>
+  </div>
+  
+    <div class="container">
+
+        <h1><i>Welcome to Ghatge Tech</i></h1>
+        <p>Innovating the future with cutting-edge technology.</p>
+        <button class="btn" id="explore">Explore Now</button>
+    </div>
+    <div class="floating-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="logout.js"></script>
+    <script>
+        // Check if user is logged in
+        let storedName = localStorage.getItem("username");
+        if (!storedName) {
+            alert("You must log in first!");
+            window.location.href = "index.html"; // Redirect to login if not logged in
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(to right,#a299d0d4,#676e8882); font-family: Arial, sans-serif; color: white; text-align: center; animation: fadeIn 2s ease-in-out; overflow: hidden; }
+
+.container { max-width: 600px; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); position: relative; overflow: hidden; }
+
+/* Logo Styling - Stark Industries Inspired */
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 70px;  /* Ensures it's at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #ffffff, #b0bec5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 1000;  /* Ensures it stays on top */
+}
+.made {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.made h1 {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+}
+/* Push Down Content to Prevent Overlap */
+.cont {
+    margin-top: 80px; /* Pushes the login form down */
+}
+
+h1 { font-size: 3rem; margin-bottom: 10px; text-transform: none; letter-spacing: 2px; animation: slideIn 1.5s ease-in-out; } 
+
+p { font-size: 1.2rem; margin-bottom: 20px; font-style: italic; animation: fadeInText 2s ease-in-out; } 
+
+.btn { background-color: white; color: #0072ff; padding: 12px 24px; font-size: 1.2rem; border: none; border-radius: 25px; cursor: pointer; transition: 0.3s; font-weight: bold; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+
+.btn:hover { background-color: #f1f1f1; transform: scale(1.05); }
+
+.logout-btn { position: absolute; top: 20px; right: 10px; background-color: #ff4b5c; color: white; padding: 10px 20px; font-size: 1rem; border: none; border-radius: 25px; cursor: pointer; transition: 0.3s; font-weight: bold; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+
+.logout-btn:hover { background-color: #ff1e3c; transform: scale(1.05); } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } @keyframes fadeInText { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } .floating-shapes { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; } .floating-shapes span { position: absolute; width: 30px; height: 30px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; animation: float 6s infinite ease-in-out; } .floating-shapes span:nth-child(1) { top: 10%; left: 20%; animation-duration: 5s; } .floating-shapes span:nth-child(2) { top: 40%; left: 80%; animation-duration: 7s; } .floating-shapes span:nth-child(3) { top: 70%; left: 50%; animation-duration: 6s; } .floating-shapes span:nth-child(4) { top: 20%; left: 60%; animation-duration: 8s; } .floating-shapes span:nth-child(5) { top: 90%; left: 30%; animation-duration: 5s; } @keyframes float { 0% { transform: translateY(0) scale(1); opacity: 0.5; } 50% { transform: translateY(-20px) scale(1.2); opacity: 1; } 100% { transform: translateY(0) scale(1); opacity: 0.5; } }
